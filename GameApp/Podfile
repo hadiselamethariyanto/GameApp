@@ -1,0 +1,38 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '16.0'
+
+use_frameworks!
+workspace 'GameApp'
+
+target 'GameApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GameApp
+
+end
+
+target 'Search' do
+	project '../Modules/Search/Search'
+end
+
+
+target 'Common' do
+	project '../Modules/Common/Common'
+end
+
+target 'Home' do
+	project '../Modules/Home/Home'
+end
+
+target 'Favorite' do 
+	project '../Modules/Favorite/Favorite'
+end
+
+target 'Profile' do
+	project '../Modules/Profile/Profile'
+end
+
+target 'Detail' do
+	project '../Modules/Detail/Detail'
+end
