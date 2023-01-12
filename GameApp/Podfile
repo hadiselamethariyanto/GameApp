@@ -12,7 +12,7 @@ target 'GameApp' do
   	use_frameworks!
 	pod 'RealmSwift'
 	pod 'Alamofire'
-	pod 'Kingfisher'
+	pod 'Kingfisher', '7.5.0'
 	pod 'Common'  
 
 	# Pods for GameApp
