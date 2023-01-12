@@ -34,7 +34,7 @@ public class DetailGameViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy MMM dd"
         
-        let image = UIImage(named: "heart")?.withRenderingMode(.alwaysTemplate)
+        let image = UIImage(named: "heart", in: Bundle(identifier: "org.cocoapods.Common"), with: nil)?.withRenderingMode(.alwaysTemplate)
         favoriteButton.backgroundColor = .blue
         favoriteButton.layer.cornerRadius = 23
         favoriteButton.setImage(image, for: .normal)

@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2F247B932968E51600819602 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2F247B922968E51600819602 /* Kingfisher */; };
-		2F31EEA129698AE7009BAEDA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2F31EEA029698AE7009BAEDA /* Alamofire */; };
 		2F31EEC12969B8DE009BAEDA /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 2F31EEC02969B8DE009BAEDA /* Swinject */; };
 		2F68F3AA2965BB4300CE007B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68F3A92965BB4300CE007B /* AppDelegate.swift */; };
 		2F68F3B32965BB4400CE007B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F68F3B22965BB4400CE007B /* Assets.xcassets */; };
 		2F68F3B62965BB4400CE007B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F68F3B42965BB4400CE007B /* LaunchScreen.storyboard */; };
-		2F9FDC3F296AA582004164FE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9FDC3E296AA582004164FE /* Realm */; };
-		2F9FDC41296AA582004164FE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9FDC40296AA582004164FE /* RealmSwift */; };
 		2FA5C9C6296E51F900F2D6D7 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5C9C5296E51F800F2D6D7 /* TabCoordinator.swift */; };
 		2FA5C9C8296E5B1300F2D6D7 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5C9C7296E5B1300F2D6D7 /* DetailCoordinator.swift */; };
 		2FA5CA1E296E68B100F2D6D7 /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5CA1D296E68B100F2D6D7 /* Profile.framework */; };
@@ -25,14 +22,11 @@
 		2FA5CA3A296E701B00F2D6D7 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5CA38296E701B00F2D6D7 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB31FDB296E7721007717C3 /* Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB31FDA296E7721007717C3 /* Detail.framework */; };
 		2FB31FDC296E7721007717C3 /* Detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB31FDA296E7721007717C3 /* Detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FD9FFE7296D7385007E9CC6 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD9FFE6296D7385007E9CC6 /* SwinjectStoryboard */; };
 		2FE69CF3296DAE890035D386 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE69CF2296DAE890035D386 /* Coordinator.swift */; };
 		2FE7E874296CD353004179C1 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E873296CD353004179C1 /* UIViewController+Ext.swift */; };
 		2FE7E876296CE0C8004179C1 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7E875296CE0C8004179C1 /* String+Ext.swift */; };
 		2FF3C7C8296D2A8700CC0E97 /* Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF3C7C7296D2A8700CC0E97 /* Search.framework */; };
 		2FF3C7C9296D2A8700CC0E97 /* Search.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF3C7C7296D2A8700CC0E97 /* Search.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FF3C812296D47C900CC0E97 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF3C811296D47C900CC0E97 /* Common.framework */; };
-		2FF3C813296D47C900CC0E97 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF3C811296D47C900CC0E97 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2818384E0633892FF5F8B3E /* Pods_GameApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E5C4CC49519CC14F6A7BDE /* Pods_GameApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +41,6 @@
 				2FF3C7C9296D2A8700CC0E97 /* Search.framework in Embed Frameworks */,
 				2FA5CA28296E6AB800F2D6D7 /* Favorite.framework in Embed Frameworks */,
 				2FA5CA3A296E701B00F2D6D7 /* Home.framework in Embed Frameworks */,
-				2FF3C813296D47C900CC0E97 /* Common.framework in Embed Frameworks */,
 				2FB31FDC296E7721007717C3 /* Detail.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -71,7 +64,6 @@
 		2FE7E873296CD353004179C1 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		2FE7E875296CE0C8004179C1 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		2FF3C7C7296D2A8700CC0E97 /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FF3C811296D47C900CC0E97 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		645E5991088B164C28CA7D04 /* Pods-GameApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameApp.debug.xcconfig"; path = "Target Support Files/Pods-GameApp/Pods-GameApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A7784CD981CD728D9561601C /* Pods-GameApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameApp.release.xcconfig"; path = "Target Support Files/Pods-GameApp/Pods-GameApp.release.xcconfig"; sourceTree = "<group>"; };
 		F4E5C4CC49519CC14F6A7BDE /* Pods_GameApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,12 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F247B932968E51600819602 /* Kingfisher in Frameworks */,
-				2FD9FFE7296D7385007E9CC6 /* SwinjectStoryboard in Frameworks */,
-				2F31EEA129698AE7009BAEDA /* Alamofire in Frameworks */,
 				2FF3C7C8296D2A8700CC0E97 /* Search.framework in Frameworks */,
-				2F9FDC3F296AA582004164FE /* Realm in Frameworks */,
-				2F9FDC41296AA582004164FE /* RealmSwift in Frameworks */,
-				2FF3C812296D47C900CC0E97 /* Common.framework in Frameworks */,
 				2FB31FDB296E7721007717C3 /* Detail.framework in Frameworks */,
 				2F31EEC12969B8DE009BAEDA /* Swinject in Frameworks */,
 				2FA5CA27296E6AB800F2D6D7 /* Favorite.framework in Frameworks */,
@@ -191,7 +178,6 @@
 				2FA5CA38296E701B00F2D6D7 /* Home.framework */,
 				2FA5CA26296E6AB800F2D6D7 /* Favorite.framework */,
 				2FA5CA1D296E68B100F2D6D7 /* Profile.framework */,
-				2FF3C811296D47C900CC0E97 /* Common.framework */,
 				2FF3C7C7296D2A8700CC0E97 /* Search.framework */,
 				F4E5C4CC49519CC14F6A7BDE /* Pods_GameApp.framework */,
 			);
@@ -210,6 +196,7 @@
 				2F68F3A32965BB4300CE007B /* Frameworks */,
 				2F68F3A42965BB4300CE007B /* Resources */,
 				2FF3C7CA296D2A8700CC0E97 /* Embed Frameworks */,
+				D2865ED7C67B9F132F530BE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,11 +205,7 @@
 			name = GameApp;
 			packageProductDependencies = (
 				2F247B922968E51600819602 /* Kingfisher */,
-				2F31EEA029698AE7009BAEDA /* Alamofire */,
 				2F31EEC02969B8DE009BAEDA /* Swinject */,
-				2F9FDC3E296AA582004164FE /* Realm */,
-				2F9FDC40296AA582004164FE /* RealmSwift */,
-				2FD9FFE6296D7385007E9CC6 /* SwinjectStoryboard */,
 			);
 			productName = GameApp;
 			productReference = 2F68F3A62965BB4300CE007B /* GameApp.app */;
@@ -254,10 +237,7 @@
 			mainGroup = 2F68F39D2965BB4300CE007B;
 			packageReferences = (
 				2F247B912968E51600819602 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				2F31EE9F29698AE7009BAEDA /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2F31EEBF2969B8DE009BAEDA /* XCRemoteSwiftPackageReference "Swinject" */,
-				2F9FDC3D296AA582004164FE /* XCRemoteSwiftPackageReference "realm-swift" */,
-				2FD9FFE5296D7385007E9CC6 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
 			);
 			productRefGroup = 2F68F3A72965BB4300CE007B /* Products */;
 			projectDirPath = "";
@@ -301,6 +281,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2865ED7C67B9F132F530BE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameApp/Pods-GameApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameApp/Pods-GameApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameApp/Pods-GameApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -533,33 +530,9 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		2F31EE9F29698AE7009BAEDA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		2F31EEBF2969B8DE009BAEDA /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		2F9FDC3D296AA582004164FE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		2FD9FFE5296D7385007E9CC6 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/SwinjectStoryboard.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.0.0;
@@ -573,30 +546,10 @@
 			package = 2F247B912968E51600819602 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		2F31EEA029698AE7009BAEDA /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2F31EE9F29698AE7009BAEDA /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
 		2F31EEC02969B8DE009BAEDA /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2F31EEBF2969B8DE009BAEDA /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
-		};
-		2F9FDC3E296AA582004164FE /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2F9FDC3D296AA582004164FE /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		2F9FDC40296AA582004164FE /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2F9FDC3D296AA582004164FE /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-		2FD9FFE6296D7385007E9CC6 /* SwinjectStoryboard */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FD9FFE5296D7385007E9CC6 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
-			productName = SwinjectStoryboard;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

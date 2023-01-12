@@ -16,7 +16,7 @@ public final class ProfileViewController: UIViewController {
         
         self.navigationItem.title = "Profile"
         
-        profileImageView.image = UIImage(named: "profile", in: Bundle(identifier: "hadi.Common"), with: nil)
+        profileImageView.image = UIImage(named: "profile", in: Bundle(identifier: "org.cocoapods.Common"), with: nil)
 
     }
    

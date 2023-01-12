@@ -11,27 +11,9 @@
 		2FB31FCA296E75FC007717C3 /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB31FC9296E75FC007717C3 /* DetailGameViewController.swift */; };
 		2FB31FCC296E7614007717C3 /* DetailGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB31FCB296E7614007717C3 /* DetailGameViewController.xib */; };
 		2FB31FCE296E762B007717C3 /* DetailGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB31FCD296E762B007717C3 /* DetailGameViewModel.swift */; };
-		2FB31FD1296E766A007717C3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB31FD0296E766A007717C3 /* Realm */; };
-		2FB31FD3296E766A007717C3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB31FD2296E766A007717C3 /* RealmSwift */; };
-		2FB31FD5296E7673007717C3 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB31FD4296E7673007717C3 /* Common.framework */; };
-		2FB31FD6296E7673007717C3 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB31FD4296E7673007717C3 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB31FDF296E7869007717C3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB31FDE296E7869007717C3 /* Kingfisher */; };
 		70F03A2B8507EC0FB6F5411E /* Pods_Detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF158DE22DACB1F630B03F9 /* Pods_Detail.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2FB31FD7296E7673007717C3 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2FB31FD6296E7673007717C3 /* Common.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2FA5CA0F296E674F00F2D6D7 /* Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +22,7 @@
 		2FB31FCB296E7614007717C3 /* DetailGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailGameViewController.xib; sourceTree = "<group>"; };
 		2FB31FCD296E762B007717C3 /* DetailGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailGameViewModel.swift; sourceTree = "<group>"; };
 		2FB31FD4296E7673007717C3 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF2A3F22970022D00BC1A5D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6496BA3AE6892D62F6B8D3E /* Pods-Detail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Detail.release.xcconfig"; path = "Target Support Files/Pods-Detail/Pods-Detail.release.xcconfig"; sourceTree = "<group>"; };
 		D26CC2C4D14E9DFE8DDE8164 /* Pods-Detail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Detail.debug.xcconfig"; path = "Target Support Files/Pods-Detail/Pods-Detail.debug.xcconfig"; sourceTree = "<group>"; };
 		DCF158DE22DACB1F630B03F9 /* Pods_Detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,9 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB31FD3296E766A007717C3 /* RealmSwift in Frameworks */,
-				2FB31FD5296E7673007717C3 /* Common.framework in Frameworks */,
-				2FB31FD1296E766A007717C3 /* Realm in Frameworks */,
 				70F03A2B8507EC0FB6F5411E /* Pods_Detail.framework in Frameworks */,
 				2FB31FDF296E7869007717C3 /* Kingfisher in Frameworks */,
 			);
@@ -103,6 +83,7 @@
 		8AD721E8EA7BECECB310E9B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF2A3F22970022D00BC1A5D /* Common.framework */,
 				2FB31FD4296E7673007717C3 /* Common.framework */,
 				DCF158DE22DACB1F630B03F9 /* Pods_Detail.framework */,
 			);
@@ -132,7 +113,6 @@
 				2FA5CA0B296E674F00F2D6D7 /* Sources */,
 				2FA5CA0C296E674F00F2D6D7 /* Frameworks */,
 				2FA5CA0D296E674F00F2D6D7 /* Resources */,
-				2FB31FD7296E7673007717C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,8 +120,6 @@
 			);
 			name = Detail;
 			packageProductDependencies = (
-				2FB31FD0296E766A007717C3 /* Realm */,
-				2FB31FD2296E766A007717C3 /* RealmSwift */,
 				2FB31FDE296E7869007717C3 /* Kingfisher */,
 			);
 			productName = Detail;
@@ -452,16 +430,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2FB31FD0296E766A007717C3 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FB31FCF296E766A007717C3 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		2FB31FD2296E766A007717C3 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FB31FCF296E766A007717C3 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 		2FB31FDE296E7869007717C3 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2FB31FDD296E7869007717C3 /* XCRemoteSwiftPackageReference "Kingfisher" */;

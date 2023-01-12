@@ -11,9 +11,6 @@
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Modules/Common/Common.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../Modules/Detail/Detail.xcodeproj">
    </FileRef>
    <FileRef

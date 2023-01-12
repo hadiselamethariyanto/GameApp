@@ -66,7 +66,7 @@ public final class SearchViewController: UIViewController {
     }
     
     private func showError(message:String, isVisible:Bool){
-        self.errorImage.image = UIImage(named: "warning", in: Bundle(identifier: "hadi.Common"), with: nil)
+        self.errorImage.image = UIImage(named: "warning", in: Bundle(identifier: "org.cocoapods.Common"), with: nil)
         self.errorImage.isHidden = !isVisible
         self.errorLabel.isHidden = !isVisible
         self.errorLabel.text = message
@@ -94,7 +94,7 @@ public final class SearchViewController: UIViewController {
     private func setTableView(){
         self.gameTableView.dataSource = self
         self.gameTableView.delegate = self
-        self.gameTableView.register(UINib(nibName: "GameTableViewCell", bundle: Bundle(identifier: "hadi.Common")), forCellReuseIdentifier: "gameTableViewCell")
+        self.gameTableView.register(UINib(nibName: "GameTableViewCell", bundle: Bundle(identifier: "org.cocoapods.Common")), forCellReuseIdentifier: "gameTableViewCell")
     }
         
 }

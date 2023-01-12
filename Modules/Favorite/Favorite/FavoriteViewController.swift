@@ -28,7 +28,7 @@ public class FavoriteViewController: UIViewController {
                 
         showEmptyView(isEmpty: false)
         
-        let bundle = Bundle(identifier: "hadi.Common")
+        let bundle = Bundle(identifier: "org.cocoapods.Common")
         gameTableView.dataSource = self
         gameTableView.delegate = self
         gameTableView.register(UINib(nibName: "GameTableViewCell", bundle: bundle), forCellReuseIdentifier: "gameTableViewCell")
@@ -52,7 +52,7 @@ public class FavoriteViewController: UIViewController {
         self.gameTableView.isHidden = isEmpty
         self.emptyImage.isHidden = !isEmpty
         self.emptyLabel.isHidden = !isEmpty
-        self.emptyImage.image = UIImage(named: "console",in: Bundle(identifier: "hadi.Common"), with: nil)
+        self.emptyImage.image = UIImage(named: "console",in: Bundle(identifier: "org.cocoapods.Common"), with: nil)
     }
 
 }

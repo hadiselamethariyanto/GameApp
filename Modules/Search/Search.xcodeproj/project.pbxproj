@@ -11,29 +11,12 @@
 		2FF3C7C5296D29E300CC0E97 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF3C7C3296D29E300CC0E97 /* SearchViewController.swift */; };
 		2FF3C7C6296D29E300CC0E97 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF3C7C4296D29E300CC0E97 /* SearchViewController.xib */; };
 		2FF3C7CC296D35C800CC0E97 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF3C7CB296D35C800CC0E97 /* SearchViewModel.swift */; };
-		2FF3C7CF296D36BB00CC0E97 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF3C7CE296D36BB00CC0E97 /* Realm */; };
-		2FF3C7D1296D36BB00CC0E97 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FF3C7D0296D36BB00CC0E97 /* RealmSwift */; };
-		2FF3C815296D487C00CC0E97 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF3C814296D487C00CC0E97 /* Common.framework */; };
-		2FF3C816296D487C00CC0E97 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF3C814296D487C00CC0E97 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C6F764CD2DC95FDA33A3FBE /* Pods_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C70841CB6246E043B6639A /* Pods_Search.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		2FF3C817296D487C00CC0E97 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2FF3C816296D487C00CC0E97 /* Common.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		2001C0EDDF657A05DCC0B2F9 /* Pods-Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search.release.xcconfig"; path = "Target Support Files/Pods-Search/Pods-Search.release.xcconfig"; sourceTree = "<group>"; };
+		2FF2A3EE2970022700BC1A5D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF3C7B8296D262E00CC0E97 /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF3C7BB296D262E00CC0E97 /* Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
 		2FF3C7C3296D29E300CC0E97 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -49,9 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF3C7D1296D36BB00CC0E97 /* RealmSwift in Frameworks */,
-				2FF3C815296D487C00CC0E97 /* Common.framework in Frameworks */,
-				2FF3C7CF296D36BB00CC0E97 /* Realm in Frameworks */,
 				3C6F764CD2DC95FDA33A3FBE /* Pods_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +79,7 @@
 		4C37892C3FA0E2DE7D48C76D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF2A3EE2970022700BC1A5D /* Common.framework */,
 				2FF3C814296D487C00CC0E97 /* Common.framework */,
 				77C70841CB6246E043B6639A /* Pods_Search.framework */,
 			);
@@ -138,7 +119,6 @@
 				2FF3C7B4296D262E00CC0E97 /* Sources */,
 				2FF3C7B5296D262E00CC0E97 /* Frameworks */,
 				2FF3C7B6296D262E00CC0E97 /* Resources */,
-				2FF3C817296D487C00CC0E97 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,8 +126,6 @@
 			);
 			name = Search;
 			packageProductDependencies = (
-				2FF3C7CE296D36BB00CC0E97 /* Realm */,
-				2FF3C7D0296D36BB00CC0E97 /* RealmSwift */,
 			);
 			productName = Search;
 			productReference = 2FF3C7B8296D262E00CC0E97 /* Search.framework */;
@@ -450,19 +428,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2FF3C7CE296D36BB00CC0E97 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FF3C7CD296D36BB00CC0E97 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		2FF3C7D0296D36BB00CC0E97 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FF3C7CD296D36BB00CC0E97 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FF3C7AF296D262E00CC0E97 /* Project object */;
 }

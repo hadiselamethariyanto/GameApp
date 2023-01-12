@@ -1,38 +1,46 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '16.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/hadiselamethariyanto/-GameApp-CorePodSpecs-Module'
+
 use_frameworks!
 workspace 'GameApp'
 
 target 'GameApp' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+	# Comment the next line if you don't want to use dynamic frameworks
+  	use_frameworks!
+	pod 'RealmSwift'
+	pod 'Alamofire'
+	pod 'Kingfisher'
+	pod 'Common'  
 
-  # Pods for GameApp
-
+	# Pods for GameApp
 end
 
 target 'Search' do
 	project '../Modules/Search/Search'
+	pod 'Common'  
 end
 
-
-target 'Common' do
-	project '../Modules/Common/Common'
-end
 
 target 'Home' do
-	project '../Modules/Home/Home'
+	project '../Modules/Home/Home'	
+	pod 'Common'  
 end
 
 target 'Favorite' do 
 	project '../Modules/Favorite/Favorite'
+	pod 'Common'  
 end
+
 
 target 'Profile' do
 	project '../Modules/Profile/Profile'
+	pod 'Common'  
 end
 
 target 'Detail' do
 	project '../Modules/Detail/Detail'
+	pod 'Common'  
 end

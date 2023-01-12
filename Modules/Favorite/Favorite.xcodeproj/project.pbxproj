@@ -11,26 +11,8 @@
 		2FA5CA21296E6A4700F2D6D7 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5CA20296E6A4700F2D6D7 /* FavoriteViewController.swift */; };
 		2FA5CA23296E6A6800F2D6D7 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5CA22296E6A6800F2D6D7 /* FavoriteViewController.xib */; };
 		2FA5CA25296E6A8700F2D6D7 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5CA24296E6A8700F2D6D7 /* FavoriteViewModel.swift */; };
-		2FA5CA2A296E6B6100F2D6D7 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5CA29296E6B6100F2D6D7 /* Common.framework */; };
-		2FA5CA2B296E6B6100F2D6D7 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5CA29296E6B6100F2D6D7 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FA5CA2F296E6B7D00F2D6D7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA5CA2E296E6B7D00F2D6D7 /* Realm */; };
-		2FA5CA31296E6B7D00F2D6D7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FA5CA30296E6B7D00F2D6D7 /* RealmSwift */; };
 		43C272070FEE0A7024F2B138 /* Pods_Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE18339671DB0BE3FEA0530 /* Pods_Favorite.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2FA5CA2C296E6B6100F2D6D7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2FA5CA2B296E6B6100F2D6D7 /* Common.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0AE18339671DB0BE3FEA0530 /* Pods_Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +22,7 @@
 		2FA5CA22296E6A6800F2D6D7 /* FavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		2FA5CA24296E6A8700F2D6D7 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		2FA5CA29296E6B6100F2D6D7 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF2A3F62970023900BC1A5D /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F9F1C1F902C06CD96B155D /* Pods-Favorite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.debug.xcconfig"; path = "Target Support Files/Pods-Favorite/Pods-Favorite.debug.xcconfig"; sourceTree = "<group>"; };
 		E6769BA7B26D6E5C5369C1E2 /* Pods-Favorite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.release.xcconfig"; path = "Target Support Files/Pods-Favorite/Pods-Favorite.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,10 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA5CA31296E6B7D00F2D6D7 /* RealmSwift in Frameworks */,
-				2FA5CA2F296E6B7D00F2D6D7 /* Realm in Frameworks */,
 				43C272070FEE0A7024F2B138 /* Pods_Favorite.framework in Frameworks */,
-				2FA5CA2A296E6B6100F2D6D7 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +81,7 @@
 		B7ED17DE9711A389D4D527A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF2A3F62970023900BC1A5D /* Common.framework */,
 				2FA5CA29296E6B6100F2D6D7 /* Common.framework */,
 				0AE18339671DB0BE3FEA0530 /* Pods_Favorite.framework */,
 			);
@@ -130,7 +111,6 @@
 				2FA5C9E3296E669B00F2D6D7 /* Sources */,
 				2FA5C9E4296E669B00F2D6D7 /* Frameworks */,
 				2FA5C9E5296E669B00F2D6D7 /* Resources */,
-				2FA5CA2C296E6B6100F2D6D7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,8 +118,6 @@
 			);
 			name = Favorite;
 			packageProductDependencies = (
-				2FA5CA2E296E6B7D00F2D6D7 /* Realm */,
-				2FA5CA30296E6B7D00F2D6D7 /* RealmSwift */,
 			);
 			productName = Favorite;
 			productReference = 2FA5C9E7296E669B00F2D6D7 /* Favorite.framework */;
@@ -438,19 +416,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2FA5CA2E296E6B7D00F2D6D7 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FA5CA2D296E6B7D00F2D6D7 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		2FA5CA30296E6B7D00F2D6D7 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2FA5CA2D296E6B7D00F2D6D7 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FA5C9DE296E669B00F2D6D7 /* Project object */;
 }

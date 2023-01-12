@@ -7,7 +7,6 @@
 
 import UIKit
 import Swinject
-import SwinjectStoryboard
 import RealmSwift
 import Common
 import Search
