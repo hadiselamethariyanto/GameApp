@@ -12,7 +12,7 @@ workflows:
       xcode: latest
       cocoapods: default
     scripts:
-     - name: Install CocoaPods dependencies
+      - name: Install CocoaPods dependencies
         script: | 
           pod install
       - name: Build ipa for distribution
