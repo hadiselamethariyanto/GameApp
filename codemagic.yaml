@@ -7,7 +7,7 @@ workflows:
     environment:
       vars:
         BUNDLE_ID: "hadi.GameApp"
-        XCODE_PROJECT: "GameApp.xcodeproj" # <-- Put the name of your Xcode workspace here
+        XCODE_WORKSPACE: "GameApp.xcworkspace" # <-- Put the name of your Xcode workspace here
         XCODE_SCHEME: "GameApp" # <-- Put the name of your Xcode scheme here
       xcode: latest
       cocoapods: default
@@ -15,11 +15,8 @@ workflows:
       - name: Build ipa for distribution
         script: | 
           xcode-project build-ipa \
-            --project "$CM_BUILD_DIR/GameApp/$XCODE_PROJECT" \
+            --workspace "$CM_BUILD_DIR/GameApp/$XCODE_WORKSPACE" \
             --scheme "GameApp/$XCODE_SCHEME"
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     artifacts:
       - build/ios/ipa/*.ipa
-      - /tmp/xcodebuild_logs/*.log
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
